@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(document).getElementsByClassName("saveBtn").addEventListener("click", function(){
+  $(".saveBtn").on("click", function () { // actually works now
     var eventText = $(this).siblings(".description").val();
     var date = $(this).parent().attr("id");
     localStorage.setItem(date, eventText);
